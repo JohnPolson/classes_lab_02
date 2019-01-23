@@ -22,16 +22,14 @@ class Pub
   end
 
   def sell_drink(drink_name)
-    for drink in @drinks
-      if  drink.name == drink_name
-        drink.amount -= 1
+    for bev in @drinks
+      if bev.name == drink_name
+        bev.amount -= 1
+        @till += bev.price
       end
-      drink.amount -= 1
-
     end
-
   end
 
 
-
+#END OF CLASS
 end
