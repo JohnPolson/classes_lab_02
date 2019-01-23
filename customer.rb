@@ -22,7 +22,11 @@ class Customer
     return @age
   end
 
+  def buy_drink(drink, pub)
+    pub.sell_drink(drink)
+    @wallet -= pub.drink_price(drink)
   
+  end
 
 
 end

@@ -41,5 +41,9 @@ class PubTest < MiniTest::Test
     assert_equal(2007.50, @pub_01.till)
   end
 
+  def test_drink_price
+    assert_equal(7.50, @pub_01.drink_price("vodka"))
+  end
+
 
 end

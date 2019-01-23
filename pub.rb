@@ -30,6 +30,14 @@ class Pub
     end
   end
 
+  def drink_price(drink_name)
+    for bev in @drinks
+      if bev.name == drink_name
+        return bev.price
+      end
+    end
+  end
+
 
 #END OF CLASS
 end
