@@ -5,27 +5,29 @@ class Drink
   def initialize(name, price, alc_unit, amount)
 
 
-    # @name = name
-    # @price = price
-    # @alc_unit = alc_unit
-    # @amount = amount
-    @drink = {
-      name: @name = name,
-      properties: {
-        price: @price = price,
-        alc_unit: @alc_unit = alc_unit,
-        amount: @amount = amount
-      }
-  }
+    @name = name
+    @price = price
+    @alc_unit = alc_unit
+    @amount = amount
+
+  #   @drink = {
+  #     name: @name = name,
+  #     properties: {
+  #       price: @price = price,
+  #       alc_unit: @alc_unit = alc_unit,
+  #       amount: @amount = amount
+  #     }
+  # }
+
 end
 
 
       def get_drink_name()
-        return @drink[:name]
+        return @name
       end
 
       def get_drink_price()
-        return @drink[:properties][:price]
+        return @price
       end
 
 

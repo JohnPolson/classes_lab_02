@@ -31,6 +31,14 @@ class PubTest < MiniTest::Test
     assert_equal(5, @pub_01.get_counts_drinks)
   end
 
+  def test_sell_drink
+
+    p @drink_01.amount
+
+    sell_drink("vodka")
+    assert_equal(19, @drink_01.amount )
+
+  end
 
 
 end

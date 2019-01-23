@@ -21,6 +21,17 @@ class Pub
     return @drinks.count
   end
 
+  def sell_drink(drink_name)
+    for drink in @drinks
+      if  drink.name == drink_name
+        drink.amount -= 1
+      end
+      drink.amount -= 1
+
+    end
+
+  end
+
 
 
 end
